@@ -1,0 +1,29 @@
+.link-card {
+  max-width: 600px;
+}
+
+.link-card-img {
+  height: 300px;
+  margin: auto;
+  display: block;
+}
+
+.link-name {
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .link-card-img {
+    height: 100px;
+    margin: auto;
+    display: block;
+  }
+}
