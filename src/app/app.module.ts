@@ -9,9 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LinkComponent } from './home/links/link/link.component';
 import { MaterialModule } from './material.module';
 import { SkillsComponent } from './home/skills/skills.component';
+import { ContactsComponent } from './home/contacts/contacts.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LinksComponent, LinkComponent, SkillsComponent],
+  declarations: [AppComponent, HomeComponent, LinksComponent, LinkComponent, SkillsComponent, ContactsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

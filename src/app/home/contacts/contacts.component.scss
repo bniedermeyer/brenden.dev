@@ -1,0 +1,26 @@
+.contact-image {
+  height: 200px;
+  width: auto;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+}

@@ -9,11 +9,12 @@ export class SkillsComponent implements OnInit {
   skills = [
     'angular',
     'express',
-    'google',
-    'html5',
     'nodejs',
+    'typescript',
     'sass',
-    'typescript'
+    'html5',
+    'google',
+    'kubernetes'
   ];
 
   constructor() {}
