@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro-background.component.scss']
 })
 export class IntroBackgroundComponent implements OnInit {
-  rotatePlanet = false;
   constructor() {}
 
   ngOnInit() {}
-
-  toggleSpin() {
-    this.rotatePlanet = true;
-  }
 }
