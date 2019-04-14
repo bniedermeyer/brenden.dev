@@ -3,7 +3,10 @@
 .intro {
   height: 100vh;
   width: auto;
-  background: url('/assets/img/pilatus.jpg') no-repeat center center fixed;
+  // background: url('/assets/img/pilatus.jpg') no-repeat center center fixed;
+  background: url('/assets/img/space.svg') center center fixed;
+  background-repeat: repeat;
+  background-color: #0e347c;
   background-size: cover;
   overflow: hidden;
 
@@ -16,8 +19,11 @@
     height: 100%;
   }
   .greeting {
+    top: -80px;
+    position: absolute;
     padding: 15% 10%;
     color: rgb(228, 228, 228);
+    z-index: 30;
     a {
       color: rgb(170, 172, 255);
       text-decoration: none;

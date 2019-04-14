@@ -1,0 +1,99 @@
+@import '../../../styles/backgrounds';
+$ring-color: #ff399c;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 10s;
+  animation-timing-function: linear;
+}
+.container {
+  position: relative;
+  padding: 100px;
+}
+
+.planet-shadow {
+  position: absolute;
+  top: 200px;
+  right: 300px;
+  height: 500px;
+  width: 500px;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: inset -10px -10px 40px #251303,
+    inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+}
+.planet {
+  @extend %planet-background;
+  position: absolute;
+  top: 200px;
+  right: 300px;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: #a424ee;
+  z-index: 5;
+  transform: rotate(45deg);
+  overflow: hidden;
+
+  .stripe {
+    height: 30px;
+    background-color: #871dc5;
+    margin-top: 20px;
+  }
+
+  .small-stripe {
+    height: 5px;
+    background-color: #b538c5;
+    margin-top: 20px;
+  }
+}
+.ring {
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  width: 900px;
+  height: 150px;
+  background: transparent;
+
+  border-radius: 90%;
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid $ring-color;
+  border-left: 10px solid $ring-color;
+  border-right: 10px solid $ring-color;
+  z-index: 20;
+  transform: rotate(45deg);
+}
+.ring2 {
+  @extend .ring;
+  border-top: 10px solid $ring-color;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .planet-shadow {
+    right: 150px;
+  }
+  .planet {
+    right: 150px;
+  }
+  .ring {
+    right: -80px;
+  }
+}
