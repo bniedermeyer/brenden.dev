@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   skills = [
     'angular',
-    'express',
+    'rxjs',
     'nodejs',
     'typescript',
     'sass',

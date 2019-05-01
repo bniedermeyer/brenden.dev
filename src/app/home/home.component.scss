@@ -3,15 +3,17 @@
 .intro {
   height: 100vh;
   width: auto;
+  background-color: rgb(53, 43, 141);
+  background: url('/assets/img/space.jpg') no-repeat center center fixed;
   // background: url('/assets/img/pilatus.jpg') no-repeat center center fixed;
-  background: url('/assets/img/space.svg') center center fixed;
-  background-repeat: repeat;
+  // background: url('/assets/img/space.svg') center center fixed;
+  // background-repeat: repeat;
   background-color: #0e347c;
   background-size: cover;
   overflow: hidden;
 
   .layer {
-    background-color: rgba(107, 107, 107, 0.5);
+    background-color: rgba(107, 107, 107, 0.6);
     position: absolute;
     top: 0;
     left: 0;
